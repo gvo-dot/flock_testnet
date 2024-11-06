@@ -1,0 +1,13 @@
+llama-index-readers-file 
+pymupdf
+llama-index-llms-llama-cpp
+llama-cpp-python -C cmake.args="-DLLAMA_CUDA=on"
+psycopg2-binary 
+pgvector 
+asyncpg 
+sqlalchemy[asyncio]
+greenlet
+llama-index-core
+llama-index-vector-stores-postgres
+llama-index-embeddings-huggingface
+jsonlines
