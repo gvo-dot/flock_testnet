@@ -25,7 +25,6 @@ def register_template(
         assistant_format=assistant_format,
         system=system,
         stop_word=stop_word,
-
     )
 
 
@@ -117,4 +116,13 @@ register_template(
     assistant_format="{content}<|eot_id|>",
     system=None,
     stop_word="<|eot_id|>",
+)
+
+register_template(
+    template_name="phi3",
+    system_format=None,
+    user_format="<|user|>\n{content}<|end|>\n<|assistant|>",
+    assistant_format="{content}<|end|>\n",
+    system=None,
+    stop_word="<|end|>",
 )
